@@ -24,7 +24,9 @@ const jump = () => {
     const characterTop = parseInt(
       window.getComputedStyle(character).getPropertyValue("top")
     );
-    character.style.top = characterTop - 5 + "px";
+    if (characterTop > 6) {
+      character.style.top = characterTop - 5 + "px";
+    }
     if (jumpCount > 20) {
       clearInterval(jumpInterval);
       jumping = 0;
