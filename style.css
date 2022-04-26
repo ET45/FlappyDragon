@@ -11,11 +11,11 @@
 }
 #block {
   width: 50px;
-  height: 500 px;
-  background-attachment: black;
+  height: 500px;
+  background-color: black;
   position: relative;
   left: 400px;
-  animation: block 2s infinite;
+  animation: block 2s infinite linear;
 }
 @keyframes block {
   0% {
