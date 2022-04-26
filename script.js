@@ -2,9 +2,10 @@ const block = document.getElementById("block");
 const hole = document.getElementById("hole");
 const character = document.getElementById("character");
 const jumping = 0;
+const counter = 0;
 
 hole.addEventListener("animationiteration", () => {
-  const random = -Math.random() * 3;
+  const random = Math.random() * 3;
   const top = random * 100 + 150;
   hole.style.top = -top + "px";
 });
@@ -14,6 +15,11 @@ setInterval(function () {
   );
   if (jumping == 0) {
     character.style.top = characterTop + 3 + "px";
+  }
+  if (characterTop > 480) {
+    alert("GameOver. Score:" + counter);
+    character.style.top = 100 + "px";
+    counter = 0;
   }
 }, 10);
 
