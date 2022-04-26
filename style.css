@@ -28,13 +28,12 @@
 #hole {
   width: 50px;
   height: 150px;
-  background-color: red;
+  background-color: white;
   position: relative;
   left: 400px;
   top: -500px;
   animation: block 2s infinite linear;
 }
-
 #character {
   width: 20px;
   height: 20px;
